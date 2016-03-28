@@ -1,0 +1,155 @@
+#hero{
+	color: white;
+	background: url(../../img/header-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	.container{
+		.row{
+			.txto1{
+				h3{
+					font-size: 3em;
+					font-family: $droid;
+					font-style: $cursiva;
+				}
+				h1{
+    				@extend .mayus;
+    				@extend .bold;
+    				font-size: 5.2em;
+				}
+				button{
+					background:$yellow;
+					border-color:$yellow;
+					padding: 1% 2%;
+					@extend .bold; 
+				}
+			}
+		}
+	}
+}
+.services{
+	@extend .pd-b;
+	h2{
+		@extend .bold;
+		font-size: 3em;
+	}
+	h6{
+		font-style: $cursiva;
+		font-family: $droid;
+		@extend .pd-b;
+	}
+	.col-md-4{
+		a{
+			font-size: 4em;
+			padding: 6%;
+			background:$yellow;
+			color:white;
+			@extend .radius;
+			@extend .pd-b;
+		}
+		.fa-lock{
+				padding: 6% 9%;
+			}
+		h4{
+			font-size: 1.2em;
+			@extend .bold;
+		}
+	}
+}
+#portfolio{
+	background: $griss;
+	@extend .separar;
+	.row{
+		.col-md-4{
+			.imagen{
+				@extend .margen;
+				@extend .pd-b;
+				background: white;
+				img{
+					width: 100%;
+				}
+				h4{
+					font-family: $mont;	
+				}
+				p{
+					font-style: $cursiva;
+					font-family: $droid;
+				}
+			}
+		}
+	}
+}
+#amazing{
+	background: $griss;
+	@extend .separar;
+	.col-md-4{
+		.team{
+			@extend .pd-b;
+			img{
+				@extend .radius;
+			}
+			a{
+				background: black;
+				color: white;
+				font-size: 1.1em;
+				padding: 3%;
+				margin: 0 2%
+			}
+		}
+	}
+	p{
+		font-family: $droid;
+		padding: 0% 21%;
+	}
+}
+#event{
+	@extend .separar;
+}
+#contact{
+	@extend .separar;
+	color: white;
+	background: url(../../img/map-image.png) no-repeat;
+	background-size: 100% 100%;
+	background-color:$map;
+	height:100vh;
+	input{
+		width: 100%;
+		height: 60px;
+		margin-bottom: 8%;
+    	font-weight: bold;
+    	color: #555;
+	}
+	textarea{
+		height: 270px;
+		padding: 2%;
+		font-weight: bold;
+    	color: #555;
+	}
+	button{
+		background:$yellow;
+		border-color:$yellow;
+		padding: 1% 2%;
+		@extend .bold; 
+	}
+}
+.footer{
+	padding: 2% 0;
+	p{
+		@extend .bold;
+	}
+	a{
+		@extend .radius;
+		background: black;
+		color: white;
+		font-size: 1.1em;
+		padding: 3%;
+		margin: 0 2%
+	}
+	span{
+		padding-left: 2%;
+		color:$yellow;
+		@extend .bold; 
+	}
+}

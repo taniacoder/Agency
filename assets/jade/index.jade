@@ -1,0 +1,166 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="assets/css/main.css")
+    link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+  body
+    // Fixed navbar
+    .navbar.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Start Bootstrap
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='#') SERVICES
+            li
+              a(href='#about') PORTFOLIO
+            li
+              a(href='#contact') ABOUT
+            li
+              a(href='#contact') TEAM
+            li
+              a(href='#contact') CONTACT
+    section#hero
+      .container
+        .row.text-center
+          .txto1
+            h3 Welcome To Our Studio!
+            h1 it's nice to meet you
+            button.btn(type="button") TELL ME MORE
+    section.services
+      .container
+        .row.text-center
+          h2 SERVICES
+          h6  Lorem ipsum dolor sit amet consectetur.
+          .col-md-4
+            a.fa.fa-shopping-cart(href="#")
+            h4 E-Commerce
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit .Minima maxime quam architecto quo inventore harum ex magni, dicta impedit
+          .col-md-4
+            a.fa.fa-laptop(href="#")
+            h4 Responsive Design
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit .Minima maxime quam architecto quo inventore harum ex magni, dicta impedit
+          .col-md-4
+            a.fa.fa-lock(href="#")
+            h4 Web Security
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit .Minima maxime quam architecto quo inventore harum ex magni, dicta impedit
+    section#portfolio.services
+      .container
+        .row.text-center
+          h2 PORTFOLIO
+          h6  Lorem ipsum dolor sit amet consectetur.
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/roundicons.png", alt="imagen1")
+              h4 Round Icons
+              p Graphic Design
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/startup-framework.png", alt="imagen1")
+              h4 Startup Framework
+              p Website Design
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/treehouse.png", alt="imagen1")
+              h4 Treehouse
+              p Website Design
+        .row.text-center
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/golden.png", alt="imagen1")
+              h4 Golden
+              p Website Design
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/escape.png", alt="imagen1")
+              h4 Escape
+              p Website Design
+          .col-md-4
+            .imagen
+              img(src="img/portfolio/dreams.png", alt="imagen1")
+              h4 Dreams
+              p Website Design
+    section#about
+      .container
+        .row.text-center
+          h2 ABOUT
+          h6  Lorem ipsum dolor sit amet consectetur.
+
+    section#amazing.services
+      .container
+        .row.text-center
+          h2 OUR AMAZING TEAM
+          h6  Lorem ipsum dolor sit amet consectetur.
+          .col-md-4
+            .team
+              img(src="img/team/1.jpg", alt="imagen1")
+              h4 kay Garland
+              p Lead Designer
+              a.fa.fa-twitter(href="")
+              a.fa.fa-facebook(href="")
+              a.fa.fa-linkedin(href="")
+          .col-md-4
+            .team
+              img(src="img/team/2.jpg", alt="imagen1")
+              h4 Larry Parker
+              p Lead Marketer
+              a.fa.fa-twitter(href="")
+              a.fa.fa-facebook(href="")
+              a.fa.fa-linkedin(href="")
+          .col-md-4
+            .team
+              img(src="img/team/3.jpg", alt="imagen1")
+              h4 Diana Pertersen
+              p Lead Developer
+              a.fa.fa-twitter(href="")
+              a.fa.fa-facebook(href="")
+              a.fa.fa-linkedin(href="")
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    section#event
+      .container
+        .row
+          .col-md-3
+            img(src="img/logos/envato.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/designmodo.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/themeforest.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/creative-market.jpg", alt="")
+    section#contact.services
+      .container.text-center
+        .row
+          h2 CONTACT US
+          h6 Lorem ipsum dolor sit amet consectetur.
+          .col-md-6
+            input.form-control(type="text" placeholder="YOUR NAME *")
+            input.form-control(type="text" placeholder="YOUR EMAIL *")
+            input.form-control(type="text" placeholder="YOUR PHONE *")
+          .col-md-6
+            textarea.form-control(placeholder="YOUR MESSAGE *")
+        button.btn.text-center(type="submit") SEND MESSAGE
+    footer.footer
+      .container
+        .row
+          .col-md-4.text-center
+            p Copyright © Your Website 2014
+          .col-md-4.text-center
+            a.fa.fa-twitter(href="")
+            a.fa.fa-facebook(href="")
+            a.fa.fa-linkedin(href="")
+          .col-md-4.text-center
+            span Privacy Policy
+            span Terms of Use
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
